@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Scout | How it Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container mx-auto poppins-regular">
+        <header class="py-3 pt-7" >
+            <div class="flex justify-between items-center ">
+                <img class="w-40" src="./public/images/logo.svg" alt="logo">
+                <div class="">
+                    <ul class="flex items-center gap-5 font-medium" >
+                        <li class="cursor-pointer" >Home</li>
+                        <li class="cursor-pointer" >Features</li>
+                        <li class="cursor-pointer" >How It Works</li>
+                        <li class="cursor-pointer" >About Us</li>
+                    </ul>
+                </div>
+                <div class="flex gap-3 text-[13px]">
+                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "  >Login</button>
+                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2 " >Create Account</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="hero text-center m-auto mt-20 ">
+                <h4 class="text-2xl font-bold " >How It Works</h4>
+                <div class=" p-1 mt-12 border w-fit m-auto border-[#ff0000] rounded-[30px]">
+                    <button id="organization" class="bg-[#ff0000] text-white px-10 py-3 rounded-3xl">Organizations</button>
+                    <button id="individual" class="px-10 py-3 rounded-3xl text-black" >Individuals</button>
+                </div>
+            </div>
+            <div class="organization-container max-w-[1000px] m-auto mt-20 grid gap-10">
+                <div class="flex justify-between items-center gap-20">
+                    <div class="grid gap-5 max-w-[500px]" >
+                        <h4 class="text-lg font-semibold" >Account Setup and Customization</h4>
+                        <p class="text-xs" >
+                            To get started with Safescout, your organization first needs to register an account on our platform. <br>
+                            Begin by providing essential details about your organization and its specific safety needs. <br>
+                            Once registered, you’ll be able to customize the application settings to align with your organizational structure. 
+                            This includes defining user roles, setting notification preferences, and establishing the safety protocols that are most relevant to your operations. 
+                        </p>    
+                    </div>
+                    <img class="max-w-[400px]" src="./public/images/hw1.svg" alt="how it works">
+                </div>
+                <div class="flex justify-between items-center gap-20">
+                    <img class="max-w-[400px]" src="./public/images/hw2.svg" alt="how it works">
+                    <div class="grid gap-5 max-w-[500px]" >
+                        <h4 class="text-lg font-semibold" >User onboarding and Training</h4>
+                        <p class="text-xs" >
+                            Next, onboard your team by adding users to the platform and assigning them specific roles and access levels based on their job responsibilities. To ensure your team is proficient with the platform, take advantage of Safescout’s comprehensive training programs. These include online tutorials, webinars, and even on-site training sessions tailored to help your staff understand and use the app effectively.  
+                        </p>    
+                    </div>
+                </div>
+                <div class="flex justify-between items-center gap-20">
+                    <div class="grid gap-5 max-w-[500px]" >
+                        <h4 class="text-lg font-semibold" >Incident Report and Management</h4>
+                        <p class="text-xs" >
+                            When it comes to managing safety incidents, encourage your team to report any safety-related issues in real-time through the Safescout app. <br>
+                            This process involves detailing the incident and attaching any relevant documentation, such as photos or videos.
+                            As an administrator, you’ll manage these reports by assigning tasks to the appropriate personnel, tracking their progress, and ensuring incidents are resolved promptly. Utilize the app’s automated workflows to streamline these processes and improve efficiency. 
+                        </p>    
+                    </div>
+                    <img class="max-w-[400px]" src="./public/images/hw3.svg" alt="how it works">
+                </div>
+                <div class="flex justify-between items-center gap-20">
+                    <img class="max-w-[400px]" src="./public/images/hw4.svg" alt="how it works">
+                    <div class="grid gap-5 max-w-[500px]" >
+                        <h4 class="text-lg font-semibold" >Satety Audits and Compliance</h4>
+                        <p class="text-xs" >
+                            Conduct regular safety audits using Safescout to identify potential risks within your organization. Make sure to follow up with compliance tracking, ensuring all safety regulations are met. 
+                            The app will help you keep track of these requirements with reminders and checklists, aiding in maintaining high safety standards. 
+                        </p>    
+                    </div>
+                </div>
+                <div class="flex justify-between items-center gap-20">
+                    <div class="grid gap-5 max-w-[500px]" >
+                        <h4 class="text-lg font-semibold" >Data Analytics and Reporting</h4>
+                        <p class="text-xs" >
+                            Finally, analyze the safety data collected through the app to identify trends and assess the effectiveness of your safety measures. Generate custom reports to share with stakeholders, highlighting key safety metrics and areas that need improvement. Integrate Safescout with your existing safety management systems and other business applications to enhance functionality and ensure seamless operations.  
+                        </p>    
+                    </div>
+                    <img class="max-w-[400px]" src="./public/images/hw5.svg" alt="how it works">
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-[#475367] pt-20 pb-10 mt-28" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+            <div class="grid gap-5 text-sm">
+                <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
+                <p class="" >
+                    Safescout provides an easy-to-use platform for reporting and managing workplace safety
+                    incidents.
+                </p>
+                <div class="">
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="./public/images/mail.png" alt="mail">
+                        <span>hello@safescout.com</span>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="./public/images/Slack.svg" alt="slack">
+                        <span>Join our slack channel</span>
+                    </div>
+            </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Products</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>Create an Account</li>
+                    <li>About</li>
+                    <li>Benefits</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Company</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>About</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Resources</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>Knowledge base</li>
+                    <li>Blog</li>
+                    <li>ios App</li>
+                    <li>Android App</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+            <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
+            <div class="flex gap-4">
+                <img class="w-5" src="./public/images/social1.svg" alt="sociai1">
+                <img class="w-5" src="./public/images/social2.svg" alt="sociai1">
+                <img class="w-5" src="./public/images/social3.svg" alt="sociai1">
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const individual = document.querySelector('#individual');
+    const organization = document.querySelector('#organization');
+
+    individual.addEventListener('click', () => {
+        individual.classList.add('bg-[#ff0000]','text-white');
+        organization.classList.remove('bg-[#ff0000]','text-white');
+    })
+
+    organization.addEventListener('click', () => {
+        individual.classList.remove('bg-[#ff0000]','text-white');
+        organization.classList.add('bg-[#ff0000]','text-white');
+    })
+</script>
+
+</html>
+
