@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Scout</title>
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container mx-auto poppins-regular">
+        <header class="py-3 pt-7" >
+            <div class="flex justify-between items-center ">
+                <img class="w-40" src="./public/images/logo.svg" alt="logo">
+                <div class="">
+                    <ul class="flex items-center gap-5 font-medium" >
+                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="#">  Home</a></li>
+                        <li class="cursor-pointer text-[#ff0000]" > <a href="#">Features</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    </ul>
+                </div>
+                <div class="flex gap-3 text-[13px]">
+                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "  >Login</button>
+                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2 " >Create Account</button>
+                </div>
+            </div>
+        </header>
+        <main> 
+            <div class="mt-32 max-w-[1000px] mx-auto">
+                <p class="text-center text-lg mb-10 font-semibold">Features</p>
+                <div class="grid grid-cols-2 gap-5" >
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Real Time Reporting</p>
+                            <p class="text-sm">
+                                Submit reports on unsafe acts and conditions as they happen.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature1.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Customizable Forms</p>
+                            <p class="text-sm">
+                                Tailor report forms to match your organization’s specific needs.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature2.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Push Notifications</p>
+                            <p class="text-sm">
+                                Receive alerts for new reports, updates, and required actions.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature3.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Data Analytics</p>
+                            <p class="text-sm">
+                                Analyze trends and generate insights from submitted reports.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature4.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">AI Scanning</p>
+                            <p class="text-sm">
+                                Utilize AI to scan photos for unsafe acts and generate reports.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature5.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Multi platform support</p>
+                            <p class="text-sm">
+                                The app is available on Web, Android (version 6 and above) and
+                                iOS (version 13 and above).
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature1.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Offline Data Caching</p>
+                            <p class="text-sm">
+                                Report incidents even without internet access; data syncs when connection is restored.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature2.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Location Tagging</p>
+                            <p class="text-sm">
+                                Automatically tag the location of reported incidents.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature3.svg" alt="feature">
+                    </div>
+                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40 col-span-2 ">
+                        <div class="p-10  " >
+                            <p class="font-semibold mb-3">Data Exports Options</p>
+                            <p class="text-sm">
+                                Export reports in various formats(Excel, PDF or CSV) for further
+                                analysis. With the help of data analytic tools, trends and insights are generated from
+                                submitted reports.
+                            </p>
+                        </div>
+                        <img class="w-36" src="./public/images/feature4.svg" alt="feature">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-[#475367] pt-20 pb-10 mt-40" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+            <div class="grid gap-5 text-sm">
+                <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
+                <p class="" >
+                    Safescout provides an easy-to-use platform for reporting and managing workplace safety
+                    incidents.
+                </p>
+                <div class="">
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="./public/images/mail.png" alt="mail">
+                        <span>hello@safescout.com</span>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="./public/images/Slack.svg" alt="slack">
+                        <span>Join our slack channel</span>
+                    </div>
+            </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Products</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>Create an Account</li>
+                    <li>About</li>
+                    <li>Benefits</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Company</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>About</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Resources</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>Knowledge base</li>
+                    <li>Blog</li>
+                    <li>ios App</li>
+                    <li>Android App</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+            <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
+            <div class="flex gap-4">
+                <img class="w-5" src="./public/images/social1.svg" alt="sociai1">
+                <img class="w-5" src="./public/images/social2.svg" alt="sociai1">
+                <img class="w-5" src="./public/images/social3.svg" alt="sociai1">
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+  loop: true,
+  slidesPerView:3,
+  spaceBetween:10,
+  speed:1000,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+});
+
+</script>
+
+</html>
