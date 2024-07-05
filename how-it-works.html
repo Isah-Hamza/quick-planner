@@ -21,34 +21,46 @@
 
 </head>
 <body>
-    <div class="container mx-auto poppins-regular">
-        <header class="py-3 pt-7" >
+    <div class="container px-5 mx-auto poppins-regular">
+        <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
-                <a href="/"><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
-                <div class="">
+                <a href=""><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
+                <div class="hidden lg:block">
                     <ul class="flex items-center gap-5 font-medium" >
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/">  Home</a></li>
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
-                        <li class="cursor-pointer  text-[#ff0000]" > <a href="#">How It Works</a>  </li>
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000] " > <a href="/">  Home</a></li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
+                        <li class="cursor-pointer text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
                     </ul>
                 </div>
-                <div class="flex gap-3 text-[13px]">
+                <div class="hidden lg:flex gap-3 text-[13px]">
                     <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="./login.html">Login</a> </button>
                     <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="register.html">Create Account</a></button>
                 </div>
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="./public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="#">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a h5ref="/feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
             </div>
         </header>
         <main>
             <div class="hero text-center m-auto mt-20 ">
                 <h4 class="text-2xl font-bold " >How It Works</h4>
-                <div class=" p-1 mt-12 border w-fit m-auto border-[#ff0000] rounded-[30px]">
+                <div class="text-xs sm:text-base p-1 mt-12 border w-fit m-auto border-[#ff0000] rounded-[30px]">
                     <button id="organization" class="bg-[#ff0000] text-white px-10 py-3 rounded-3xl">Organizations</button>
                     <button id="individual" class="px-10 py-3 rounded-3xl text-black" >Individuals</button>
                 </div>
             </div>
             <div class="organization-container max-w-[1000px] m-auto mt-20 grid gap-10">
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Account Setup and Customization</h4>
                         <p class="text-xs" >
@@ -58,10 +70,10 @@
                             This includes defining user roles, setting notification preferences, and establishing the safety protocols that are most relevant to your operations. 
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw1.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw1.svg" alt="how it works">
                 </div>
-                <div class="flex justify-between items-center gap-20">
-                    <img class="max-w-[400px]" src="./public/images/hw2.svg" alt="how it works">
+                <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-7 sm:gap-20">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw2.svg" alt="how it works">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >User onboarding and Training</h4>
                         <p class="text-xs" >
@@ -69,7 +81,7 @@
                         </p>    
                     </div>
                 </div>
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Incident Report and Management</h4>
                         <p class="text-xs" >
@@ -78,10 +90,10 @@
                             As an administrator, you’ll manage these reports by assigning tasks to the appropriate personnel, tracking their progress, and ensuring incidents are resolved promptly. Utilize the app’s automated workflows to streamline these processes and improve efficiency. 
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw3.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw3.svg" alt="how it works">
                 </div>
-                <div class="flex justify-between items-center gap-20">
-                    <img class="max-w-[400px]" src="./public/images/hw4.svg" alt="how it works">
+                <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-7 sm:gap-20">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw4.svg" alt="how it works">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Satety Audits and Compliance</h4>
                         <p class="text-xs" >
@@ -90,28 +102,28 @@
                         </p>    
                     </div>
                 </div>
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Data Analytics and Reporting</h4>
                         <p class="text-xs" >
                             Finally, analyze the safety data collected through the app to identify trends and assess the effectiveness of your safety measures. Generate custom reports to share with stakeholders, highlighting key safety metrics and areas that need improvement. Integrate Safescout with your existing safety management systems and other business applications to enhance functionality and ensure seamless operations.  
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw5.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw5.svg" alt="how it works">
                 </div>
             </div>
             <div class="hidden individual-container max-w-[1000px] m-auto mt-20 grid gap-10">
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Download and Installing App</h4>
                         <p class="text-xs" >
                             To enhance your personal safety with Safescout, start by downloading and installing the app from the App Store (iOS) or Google Play Store (Android). Once installed, create your user profile by providing basic information such as your name, contact details, and emergency contacts. Customize your safety preferences by selecting the types of alerts you want to receive and setting up your location preferences.  
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw6.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw6.svg" alt="how it works">
                 </div>
-                <div class="flex justify-between items-center gap-20">
-                    <img class="max-w-[400px]" src="./public/images/hw7.svg" alt="how it works">
+                <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-7 sm:gap-20">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw7.svg" alt="how it works">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Receive Real-Time Safety Alert</h4>
                         <p class="text-xs" >
@@ -119,17 +131,17 @@
                         </p>    
                     </div>
                 </div>
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Accessing Satety Resources</h4>
                         <p class="text-xs" >
                             Make use of the safety resources available within the app to stay informed and prepared. The app offers various safety tips and best practices for different situations. In case of an emergency, use the app to quickly access local emergency services, call emergency numbers, and send your location to your emergency contacts. 
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw8.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw8.svg" alt="how it works">
                 </div>
-                <div class="flex justify-between items-center gap-20">
-                    <img class="max-w-[400px]" src="./public/images/hw9.svg" alt="how it works">
+                <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-7 sm:gap-20">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw9.svg" alt="how it works">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Reporting Satety Incident</h4>
                         <p class="text-xs" >
@@ -137,20 +149,20 @@
                         </p>    
                     </div>
                 </div>
-                <div class="flex justify-between items-center gap-20">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-7 sm:gap-20">
                     <div class="grid gap-5 max-w-[500px]" >
                         <h4 class="text-lg font-semibold" >Connecting with the Community</h4>
                         <p class="text-xs" >
                             Lastly, connect with your community through the app’s safety network feature. Share safety information with others and receive alerts from nearby users. Build your safety network by adding friends and family members to stay informed and support each other in emergencies.
                         </p>    
                     </div>
-                    <img class="max-w-[400px]" src="./public/images/hw10.svg" alt="how it works">
+                    <img class="sm:max-w-[400px]" src="./public/images/hw10.svg" alt="how it works">
                 </div>
             </div>
         </main>
     </div>
-    <footer class="bg-[#475367] pt-20 pb-10 mt-28" >
-        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+    <footer class="bg-[#475367] pt-20 px-5 pb-10 mt-28" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 text-white">
             <div class="grid gap-5 text-sm">
                 <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
                 <p class="" >
@@ -164,7 +176,7 @@
                     </div>
                     <div class="flex gap-1 items-center">
                         <img class="w-4" src="./public/images/Slack.svg" alt="slack">
-                        <span>Join our slack channel</span>
+                        <span class="whitespace-nowrap" >Join our slack channel</span>
                     </div>
             </div>
             </div>
@@ -196,7 +208,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+        <div class="text-white flex flex-col sm:flex-row gap-5 justify-between items-center max-w-[1000px] mx-auto pt-5">
             <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
             <div class="flex gap-4">
                 <img class="w-5" src="./public/images/social1.svg" alt="sociai1">

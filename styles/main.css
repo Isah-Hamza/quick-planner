@@ -1,5 +1,10 @@
-*{
-  border: 1px solid green;
+.show{
+ display: block !important;
+}
+@media screen and (min-width:1024px) {
+  .show{
+    display: none !important;
+  }
 }
 .poppins-thin {
     font-family: "Poppins", sans-serif;

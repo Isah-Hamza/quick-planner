@@ -22,30 +22,42 @@
 
 </head>
 <body>
-    <div class="container mx-auto poppins-regular">
-        <header class="py-3 pt-7" >
+    <div class="container px-5 mx-auto poppins-regular">
+        <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
-                <a href="/"><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
-                <div class="">
+                <a href=""><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
+                <div class="hidden lg:block">
                     <ul class="flex items-center gap-5 font-medium" >
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/">  Home</a></li>
-                        <li class="cursor-pointer text-[#ff0000]" > <a href="#">Features</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000] " > <a href="/">  Home</a></li>
+                        <li class="cursor-pointer text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
                         <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
                         <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
                     </ul>
                 </div>
-                <div class="flex gap-3 text-[13px]">
+                <div class="hidden lg:flex gap-3 text-[13px]">
                     <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="./login.html">Login</a> </button>
                     <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="register.html">Create Account</a></button>
                 </div>
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="./public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="#">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a h5ref="/feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
             </div>
         </header>
         <main> 
             <div class="mt-32 max-w-[1000px] mx-auto">
                 <p class="text-center text-lg mb-10 font-semibold">Features</p>
-                <div class="grid grid-cols-2 gap-5" >
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                <div class="grid md:grid-cols-2 gap-5" >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Real Time Reporting</p>
                             <p class="text-sm">
                                 Submit reports on unsafe acts and conditions as they happen.
@@ -53,8 +65,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature1.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Customizable Forms</p>
                             <p class="text-sm">
                                 Tailor report forms to match your organization’s specific needs.
@@ -62,8 +74,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature2.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Push Notifications</p>
                             <p class="text-sm">
                                 Receive alerts for new reports, updates, and required actions.
@@ -71,8 +83,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature3.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Data Analytics</p>
                             <p class="text-sm">
                                 Analyze trends and generate insights from submitted reports.
@@ -80,8 +92,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature4.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">AI Scanning</p>
                             <p class="text-sm">
                                 Utilize AI to scan photos for unsafe acts and generate reports.
@@ -89,8 +101,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature5.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Multi platform support</p>
                             <p class="text-sm">
                                 The app is available on Web, Android (version 6 and above) and
@@ -99,8 +111,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature1.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Offline Data Caching</p>
                             <p class="text-sm">
                                 Report incidents even without internet access; data syncs when connection is restored.
@@ -108,8 +120,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature2.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Location Tagging</p>
                             <p class="text-sm">
                                 Automatically tag the location of reported incidents.
@@ -117,8 +129,8 @@
                         </div>
                         <img class="w-36" src="./public/images/feature3.svg" alt="feature">
                     </div>
-                    <div class="flex gap-5 rounded-xl border border-[#fb4a00]/40 col-span-2 ">
-                        <div class="p-10  " >
+                    <div class="p-5 sm:p-0 flex flex-col-reverse sm:flex-row gap-5 rounded-xl border border-[#fb4a00]/40 md:col-span-2 ">
+                        <div class="p-0 sm:p-10" >
                             <p class="font-semibold mb-3">Data Exports Options</p>
                             <p class="text-sm">
                                 Export reports in various formats(Excel, PDF or CSV) for further
@@ -132,8 +144,8 @@
             </div>
         </main>
     </div>
-    <footer class="bg-[#475367] pt-20 pb-10 mt-40" >
-        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+    <footer class="bg-[#475367] pt-20 px-5 pb-10 mt-28" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 text-white">
             <div class="grid gap-5 text-sm">
                 <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
                 <p class="" >
@@ -147,7 +159,7 @@
                     </div>
                     <div class="flex gap-1 items-center">
                         <img class="w-4" src="./public/images/Slack.svg" alt="slack">
-                        <span>Join our slack channel</span>
+                        <span class="whitespace-nowrap" >Join our slack channel</span>
                     </div>
             </div>
             </div>
@@ -179,7 +191,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+        <div class="text-white flex flex-col sm:flex-row gap-5 justify-between items-center max-w-[1000px] mx-auto pt-5">
             <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
             <div class="flex gap-4">
                 <img class="w-5" src="./public/images/social1.svg" alt="sociai1">
@@ -191,33 +203,17 @@
 </body>
 
 <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
 
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-//   direction: 'vertical',
-  loop: true,
-  slidesPerView:3,
-  spaceBetween:10,
-  speed:1000,
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-});
-
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 </script>
 
 </html>

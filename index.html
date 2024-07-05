@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="container px-5 mx-auto poppins-regular">
-        <header class="py-3 pt-7" >
+        <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
                 <a href=""><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
                 <div class="hidden lg:block">
@@ -38,7 +38,18 @@
                     <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="./login.html">Login</a> </button>
                     <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="register.html">Create Account</a></button>
                 </div>
-                <button class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="./public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="#">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a h5ref="/feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
             </div>
         </header>
         <main>
@@ -428,6 +439,17 @@
 //   },
 });
 
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
+
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
+
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 </script>
 
 </html>
