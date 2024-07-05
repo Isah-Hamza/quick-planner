@@ -21,39 +21,51 @@
 
 </head>
 <body>
-    <div class="container mx-auto poppins-regular">
-        <header class="py-3 pt-7" >
+    <div class="px-5 container mx-auto poppins-regular">
+        <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
-                <a href="/"><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
-                <div class="">
+                <a href=""><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
+                <div class="hidden lg:block">
                     <ul class="flex items-center gap-5 font-medium" >
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/">  Home</a></li>
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="/how-it-works.html">How It Works</a>  </li>
-                        <li class="cursor-pointer  hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000] " > <a href="/">  Home</a></li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
                     </ul>
                 </div>
-                <div class="flex gap-3 text-[13px]">
-                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2"  >Login</button>
-                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2 " > <a class="" href="register.html">Create Account</a> </button>
+                <div class="hidden lg:flex gap-3 text-[13px]">
+                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="./login.html">Login</a> </button>
+                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="register.html">Create Account</a></button>
                 </div>
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="./public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="#">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a h5ref="/feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
             </div>
         </header>
         <main>
-            <div class="organization-container max-w-[1000px] m-auto mt-20 flex justify-between items-center gap-10">
-                <div class="grid gap-6 mt-5 mx-auto w-[400px] px-14 py-20">
+            <div class="organization-container max-w-[1000px] m-auto md:mt-20 flex justify-between items-center gap-10">
+                <div class="grid gap-6 mt-5 mx-auto w-[400px] px-5 md:px-14 py-20">
                     <h4 class="text-3xl font-bold" >Login</h4>
                     <input class="border border-[#ff0000]/50 rounded-xl outline-none px-4 py-3 text-sm" placeholder="Email Address" type="text">
                     <input class="border border-[#ff0000]/50 rounded-xl outline-none px-4 py-3 text-sm" placeholder="Password" type="text">
                     <p class="text-right text-sm -mt-3" >Forgot Password</p>
                     <button class="text-white mt-8 bg-[#ff0000] rounded-xl px-20 py-3" >Submit</button>
                 </div>
-                <img class="max-w-[500px]" src="./public/images/login.svg" alt="login">
+                <img class="hidden md:block max-w-[500px]" src="./public/images/login.svg" alt="login">
             </div>
         </main>
     </div>
-    <footer class="bg-[#475367] pt-20 pb-10 mt-28" >
-        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+    <footer class="bg-[#475367] pt-20 px-5 pb-10 mt-28" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 text-white">
             <div class="grid gap-5 text-sm">
                 <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
                 <p class="" >
@@ -67,7 +79,7 @@
                     </div>
                     <div class="flex gap-1 items-center">
                         <img class="w-4" src="./public/images/Slack.svg" alt="slack">
-                        <span>Join our slack channel</span>
+                        <span class="whitespace-nowrap" >Join our slack channel</span>
                     </div>
             </div>
             </div>
@@ -99,7 +111,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+        <div class="text-white flex flex-col sm:flex-row gap-5 justify-between items-center max-w-[1000px] mx-auto pt-5">
             <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
             <div class="flex gap-4">
                 <img class="w-5" src="./public/images/social1.svg" alt="sociai1">
@@ -111,24 +123,16 @@
 </body>
 
 <script>
-    const individual = document.querySelector('#individual');
-    const organization = document.querySelector('#organization');
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
 
-    const individual_container = document.querySelector('.individual-container')
-    const organization_container= document.querySelector('.organization-container')
-
-    individual.addEventListener('click', () => {
-        individual.classList.add('bg-[#ff0000]','text-white');
-        organization.classList.remove('bg-[#ff0000]','text-white');
-        //individual_container.classList.toggle('hidden');
-        //organization_container.classList.toggle('hidden');
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
     })
 
-    organization.addEventListener('click', () => {
-        individual.classList.remove('bg-[#ff0000]','text-white');
-        organization.classList.add('bg-[#ff0000]','text-white');
-        //individual_container.classList.toggle('hidden');
-        //organization_container.classList.toggle('hidden');
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
     })
 </script>
 

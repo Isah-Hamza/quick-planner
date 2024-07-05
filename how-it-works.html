@@ -239,6 +239,18 @@
         individual_container.classList.toggle('hidden');
         organization_container.classList.toggle('hidden');
     })
+
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
+
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
+
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 </script>
 
 </html>

@@ -22,33 +22,47 @@
 
 </head>
 <body>
-    <div class="container mx-auto poppins-regular">
-        <header class="py-3 pt-7" >
+    <div class="container px-5 mx-auto poppins-regular">
+        <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
-                <a href="/"><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
-                <div class="">
+                <a href=""><img class="w-40" src="./public/images/logo.svg" alt="logo"></a>
+                <div class="hidden lg:block">
                     <ul class="flex items-center gap-5 font-medium" >
-                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/">  Home</a></li>
-                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="feature.html">Features</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000] " > <a href="/">  Home</a></li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
                         <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
-                        <li class="cursor-pointer text-[#ff0000]" > <a href="#">About Us</a>  </li>
+                        <li class="cursor-pointer text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
                     </ul>
                 </div>
-                <div class="flex gap-3 text-[13px]">
+                <div class="hidden lg:flex gap-3 text-[13px]">
                     <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="./login.html">Login</a> </button>
                     <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="register.html">Create Account</a></button>
                 </div>
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="./public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="./public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="#">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a h5ref="/feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
             </div>
         </header>
         <main> 
             <div class="max-w-[1000px] mx-auto  mt-28 flex justify-between items-center gap-10">
-                <div class="grid gap-5 max-w-[650px]" >
-                    <h4 class="text-xl font-semibold" >About Us</h4>
-                    <p class="text-sm " >At SAfescout, we are committed to revolutionizing workplace safety through innovation and
+                <div class="grid gap-5 max-w-[650px] text-justify md:text-left" >
+                    <h4 class="text-xl font-semibold text-center md:text-left" >About Us</h4>
+                    <p class="text-sm" >At SAfescout, we are committed to revolutionizing workplace safety through innovation and
                         technology. Our mission is to provide organizations with a powerful, user-friendly platform
                         for reporting and managing safety incidents in real-time. By leveraging cutting-edge features
                         such as AI scanning, customizable forms, and detailed data analytics, we help businesses
                         create safer and more efficient work environments.</p>
+                     <img class="sm:max-w-[370px] block md:hidden min-h-[450px]" src="./public/images/about-image.svg" alt="about us">
+
                     <p class="text-sm">
                         SAfescout was developed with the goal of enhancing safety awareness and improving
                         incident management across various industries. We understand the critical importance of a
@@ -60,15 +74,15 @@
                         Join us in our mission to make the world a safer place, one report at a time. With SAfescout,
                         you have a trusted partner dedicated to your safety and success.
                     </p>
-                    <button class="mt-14 w-fit text-white bg-[#ff0000] rounded-2xl px-6 py-2" >Create Account</button>
+                    <button class="mt-5 md:mt-14 mx-auto md:mx-[unset] w-fit text-white bg-[#ff0000] rounded-2xl px-6 py-2" >Create Account</button>
 
                 </div>
-                <img class="max-w-[370px] min-h-[450px]" src="./public/images/about-image.svg" alt="about us">
+                <img class="hidden md:block max-w-[370px] min-h-[450px]" src="./public/images/about-image.svg" alt="about us">
             </div>
         </main>
     </div>
-    <footer class="bg-[#475367] pt-20 pb-10 mt-40" >
-        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-4 gap-14 text-white">
+    <footer class="bg-[#475367] pt-20 px-5 pb-10 mt-28" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 text-white">
             <div class="grid gap-5 text-sm">
                 <img class="w-32" src="./public/images/logo_white.svg" alt="logo white variant">
                 <p class="" >
@@ -82,7 +96,7 @@
                     </div>
                     <div class="flex gap-1 items-center">
                         <img class="w-4" src="./public/images/Slack.svg" alt="slack">
-                        <span>Join our slack channel</span>
+                        <span class="whitespace-nowrap" >Join our slack channel</span>
                     </div>
             </div>
             </div>
@@ -114,7 +128,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white flex justify-between items-center max-w-[1000px] mx-auto pt-5">
+        <div class="text-white flex flex-col sm:flex-row gap-5 justify-between items-center max-w-[1000px] mx-auto pt-5">
             <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
             <div class="flex gap-4">
                 <img class="w-5" src="./public/images/social1.svg" alt="sociai1">
@@ -126,33 +140,17 @@
 </body>
 
 <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
 
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-//   direction: 'vertical',
-  loop: true,
-  slidesPerView:3,
-  spaceBetween:10,
-  speed:1000,
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-});
-
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
 </script>
 
 </html>
