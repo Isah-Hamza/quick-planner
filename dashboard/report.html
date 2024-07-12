@@ -43,9 +43,9 @@
             <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
                 <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="../public/images/close.svg" alt="close icon">  </button>
                 <ul class="flex flex-col gap-7 font-medium text-left" >
-                    <li class="cursor-pointer text-[#ff0000]" > <a href="/">  Safety Feeds</a></li>
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="/dashbaord">  Safety Feeds</a></li>
                     <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/dashboard/report-incident.html">Report Incdients</a>  </li>
-                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="">Report HIstory</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">Report HIstory</a>  </li>
                     <li class="cursor-pointer hover:text-[#ff0000]" > <a href="">Profile</a>  </li>
                     <li class="cursor-pointer hover:text-[#ff0000]" > <a href="">Security</a>  </li>
                     <li class="mt-16 cursor-pointer hover:text-[#ff0000]" > <a href="">Logout</a>  </li>
@@ -59,19 +59,19 @@
                     <p class="text-center font-medium text-sm" >John Doe</p>
                     <p class="text-center font-medium text-sm" >johndoe@yahoo.com</p>
                     <div class="mt-14 flex flex-col gap-7 pl-10">
-                        <a href="/" class="flex items-center gap-2  text-[red] " > 
+                        <a href="/dashboard/" class="flex items-center gap-2  " > 
                             <img class="w-5  " src="../public/images/home.png" alt="home"> <span>Safety Feed</span>
                         </a>
-                        <a href="/dashboard/report-incident.html" class="flex items-center gap-2 " > 
+                        <a  href="/dashboard/report-incident.html" class="flex items-center gap-2 text-[red] " > 
                             <img class="w-5" src="../public/images/result.png" alt="home"> <span>Report Incident</span>
                         </a>
-                        <a href="#" class="flex items-center gap-2 " > 
+                        <a class="flex items-center gap-2 " > 
                             <img class="w-5" src="../public/images/time.png" alt="home"> <span>Report History</span>
                         </a>
-                        <a href="#" class="flex items-center gap-2 " > 
+                        <a class="flex items-center gap-2 " > 
                             <img class="w-5" src="../public/images/user.png" alt="home"> <span>Profile</span>
                         </a>
-                        <a href="#" class="flex items-center gap-2 " > 
+                        <a class="flex items-center gap-2 " > 
                             <img class="w-5" src="../public/images/security.png" alt="home"> <span>Security</span>
                         </a>
                     </div>
@@ -81,69 +81,24 @@
                         </button>
                     </div>
                 </div>
-                <div class="mb-20 sm:px-20 sm:pl-10  pt-10">
-                    <p class="font-bold text-2xl text-[red] mb-7" >Safety Feeds</p>
-                    <div class=" flex-1 h-full grid sm:grid-cols-2 gap-5 ">
-                        <div class="bg-[#f4f4f4] rounded-xl p-3">
-                            <div class="flex justify-between items-center">
-                                <span>Not Fixed</span>
-                                <span>12mins ago</span>
-                            </div>
-                            <img class="mt-3" src="../public/images/feed.svg" alt="feed">
-                            <div class="mt-3 flex gap-3 items-center">
-                                <img src="../public/images/location.svg" alt="location">
-                                <span>Choba, Port Harcourt</span>
-                            </div>
-                            <div class="mt-1 flex gap-3 items-center">
-                                <img src="../public/images/warning.svg" alt="location">
-                                <span>Nails and dangerous tools found</span>
+                <div class="px-5 sm:px-20 py-10">
+                    <p class="font-bold text-2xl text-[red] mb-1" >Report Incidents</p>
+                    <p class="mb-7" >How do you intend to report this incident?</p>
+
+                    <div class="max-w-[350px] mt-3">
+                        <div class="flex items-center gap-1 mb-2" ><span class="font-semibold" >Location</span>  <span>Onne, Port Harcourt</span> <img src="../public/images/location.svg" alt="location"> </div>
+                        <div class="bg-[#f4f4f4] py-10 grid place-content-center">
+                            <div style="border-style: dashed;" class="text-center w-40 min-h-20 border-2 border-dashed">
+                                <img class="mx-auto" src="../public/images/Camera.svg" alt="camera">
+                                <p>Click to capture <br> photos of the incident</p>
                             </div>
                         </div>
-                        <div class="bg-[#f4f4f4] rounded-xl p-3">
-                            <div class="flex justify-between items-center">
-                                <span>Not Fixed</span>
-                                <span>12mins ago</span>
-                            </div>
-                            <img class="mt-3" src="../public/images/feed.svg" alt="feed">
-                            <div class="mt-3 flex gap-3 items-center">
-                                <img src="../public/images/location.svg" alt="location">
-                                <span>Choba, Port Harcourt</span>
-                            </div>
-                            <div class="mt-1 flex gap-3 items-center">
-                                <img src="../public/images/warning.svg" alt="location">
-                                <span>Nails and dangerous tools found</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#f4f4f4] rounded-xl p-3">
-                            <div class="flex justify-between items-center">
-                                <span>Not Fixed</span>
-                                <span>12mins ago</span>
-                            </div>
-                            <img class="mt-3" src="../public/images/feed.svg" alt="feed">
-                            <div class="mt-3 flex gap-3 items-center">
-                                <img src="../public/images/location.svg" alt="location">
-                                <span>Choba, Port Harcourt</span>
-                            </div>
-                            <div class="mt-1 flex gap-3 items-center">
-                                <img src="../public/images/warning.svg" alt="location">
-                                <span>Nails and dangerous tools found</span>
-                            </div>
-                        </div>
-                        <div class="bg-[#f4f4f4] rounded-xl p-3">
-                            <div class="flex justify-between items-center">
-                                <span>Not Fixed</span>
-                                <span>12mins ago</span>
-                            </div>
-                            <img class="mt-3" src="../public/images/feed.svg" alt="feed">
-                            <div class="mt-3 flex gap-3 items-center">
-                                <img src="../public/images/location.svg" alt="location">
-                                <span>Choba, Port Harcourt</span>
-                            </div>
-                            <div class="mt-1 flex gap-3 items-center">
-                                <img src="../public/images/warning.svg" alt="location">
-                                <span>Nails and dangerous tools found</span>
-                            </div>
-                        </div>
+                        <div class="flex items-center gap-1 mt-7 mb-2" ><span class="font-semibold" >Describe the situation</span>  </div>
+                        <input class="bg-[#f4f4f4] py-3 px-3 outline-none w-full " />
+                        <div class="flex items-center gap-1 mt-7 mb-2" ><span class="font-semibold" >Select Relevant Tags</span>  </div>
+                        <input class="bg-[#f4f4f4] py-3 px-3 outline-none w-full " />
+                        <button class="mt-10 mx-auto sm:mx-[unset] w-fit text-white bg-[red] px-10 py-2.5" >Next</button>
+
                     </div>
                 </div>
             </div>
@@ -171,19 +126,19 @@
             <div class="flex flex-col gap-3">
                 <p class="font-semibold">Products</p>
                 <ul class="text-sm flex flex-col gap-2.5 mt-3" >
-                    <li> <a href="register.html"> Create an Account</a></li>
-                    <li> <a href="about-us.html">About</a> </li>
-                    <li> <a href="how-it-works.html">How it Works</a></li>
-                    <li> <a href="feature.html">Features</a></li>
+                    <li> <a href="../register.html"> Create an Account</a></li>
+                    <li> <a href="../about-us.html">About</a> </li>
+                    <li> <a href="../how-it-works.html">How it Works</a></li>
+                    <li> <a href="../feature.html">Features</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-3">
                 <p class="font-semibold">Company</p>
                 <ul class="text-sm flex flex-col gap-2.5 mt-3" >
-                    <li> <a href="/about-us.html">About</a></li>
+                    <li> <a href="../about-us.html">About</a></li>
                     <li>Privacy Policy</li>
                     <li>Terms & Conditions</li>
-                    <li><a href="#contact-us">Contact</a></li>
+                    <li><a href="../#contact-us">Contact</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-3">
