@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Scout</title>
+    <link rel="icon" type="image/x-icon" href="../public/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container px-5 mx-auto poppins-regular">
+        <header class="py-3 pt-7 relative" >
+            <div class="flex justify-between items-center ">
+                <a href="/"><img class="w-40 block lg:hidden " src="../public/images/logo.svg" alt="logo"></a>
+              <!--   <div class="hidden lg:block">
+                    <ul class="flex items-center gap-5 font-medium" >
+                        <li class="cursor-pointer text-[#ff0000] " > <a href="#">  Home</a></li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    </ul>
+                </div> -->
+                <!-- <div class="hidden lg:flex gap-3 text-[13px]">
+                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="../login.html">Login</a> </button>
+                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="../register.html">Create Account</a></button>
+                </div> -->
+                <button id="menu" class="block lg:hidden" > <img class="w-6" src="../public/images/menu.svg" alt="menu icon">  </button>
+            </div>
+            <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
+                <button id="close" class="absolute top-8 right-5" > <img class="w-6" src="../public/images/close.svg" alt="close icon">  </button>
+                <ul class="flex flex-col gap-5 font-medium text-left" >
+                    <li class="cursor-pointer text-[#ff0000]" > <a href="/">  Home</a></li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="feature.html">Features</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="login.html">Login</a>  </li>
+                    <li class="cursor-pointer hover:text-[#ff0000]" > <a href="register.html">Register</a>  </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="w-full flex h-[500px]">
+                <div class="w-[300px] h-full border-r flex flex-col ">
+                    <img class="mx-auto" src="../public/images/john.svg" alt="user">
+                    <p class="text-center font-medium text-sm" >John Doe</p>
+                    <p class="text-center font-medium text-sm" >johndoe@yahoo.com</p>
+                    <div class="mt-10 flex flex-col gap-5 pl-10">
+                        <button class="flex items-center gap-2 " > 
+                            <img class="w-5" src="../public/images/home.png" alt="home"> <span>Safety Feed</span>
+                        </button>
+                        <button class="flex items-center gap-2 " > 
+                            <img class="w-5" src="../public/images/result.png" alt="home"> <span>Report Incident</span>
+                        </button>
+                        <button class="flex items-center gap-2 " > 
+                            <img class="w-5" src="../public/images/time.png" alt="home"> <span>Report History</span>
+                        </button>
+                        <button class="flex items-center gap-2 " > 
+                            <img class="w-5" src="../public/images/user.png" alt="home"> <span>Profile</span>
+                        </button>
+                        <button class="flex items-center gap-2 " > 
+                            <img class="w-5" src="../public/images/security.png" alt="home"> <span>Security</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 h-full"></div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-[#475367] pt-20 px-5 pb-10" >
+        <div class="border-b pb-10 border-[gainsboro] max-w-[1000px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 text-white">
+            <div class="grid gap-5 text-sm">
+                <a href="/"> <img class="w-32" src="../public/images/logo_white.svg" alt="logo white variant"></a>
+                <p class="" >
+                    Safescout provides an easy-to-use platform for reporting and managing workplace safety
+                    incidents.
+                </p>
+                <div class="">
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="../public/images/mail.png" alt="mail">
+                        <span><a href="mailto:email@example.com">hello@safescout.com</a> </span>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <img class="w-4" src="../public/images/Slack.svg" alt="slack">
+                        <span class="whitespace-nowrap" >Join our slack channel</span>
+                    </div>
+            </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Products</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li> <a href="register.html"> Create an Account</a></li>
+                    <li> <a href="about-us.html">About</a> </li>
+                    <li> <a href="how-it-works.html">How it Works</a></li>
+                    <li> <a href="feature.html">Features</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Company</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li> <a href="/about-us.html">About</a></li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <p class="font-semibold">Resources</p>
+                <ul class="text-sm flex flex-col gap-2.5 mt-3" >
+                    <li>Knowledge base</li>
+                    <li>Blog</li>
+                    <li>ios App</li>
+                    <li>Android App</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-white flex flex-col sm:flex-row gap-5 justify-between items-center max-w-[1000px] mx-auto pt-5">
+            <p class="font-medium" >© 2024 Safescout - All Rights Reserved</p>
+            <div class="flex gap-4">
+                <img class="w-5" src="../public/images/social1.svg" alt="sociai1">
+                <img class="w-5" src="../public/images/social2.svg" alt="sociai1">
+                <img class="w-5" src="../public/images/social3.svg" alt="sociai1">
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="module">
+
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    const mobile_nav = document.querySelector('.mobile-nav');
+
+    menu.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
+
+    close.addEventListener('click', () => {
+        mobile_nav.classList.toggle('show');
+    })
+</script>
+
+</html>
