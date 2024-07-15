@@ -81,7 +81,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="px-5 sm:px-20 py-10">
+                <div id="main" class="px-5 sm:px-20 py-10">
                     <p class="font-bold text-2xl text-[red] mb-1" >Report Incidents</p>
                     <p class="mb-7" >How do you intend to report this incident?</p>
 
@@ -122,11 +122,15 @@
                             </div>
                             <div class="flex items-center gap-3 mt-10 mb-5">
                                 <button id="back" class="w-fit text-white bg-black px-10 py-2.5" >Back</button>
-                                <a href="./success.html" id="next" class=" mx-auto sm:mx-[unset] w-fit text-white bg-[red] px-10 py-2.5" >Submit For Review</a>
+                                <button id="submit" class=" mx-auto sm:mx-[unset] w-fit text-white bg-[red] px-10 py-2.5" >Submit For Review</button=>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div id="spinner" class="hidden grid place-content-center w-full">
+                    <img src="../public/images/spinner.svg" alt="spinner" class="animate-spin mx-auto w-40" >
+                    <p class="text-center mt-2" >Please hold on while the AI scans your photos.</p>
+                </div>  
             </div>
         </main>
     </div>
@@ -194,9 +198,12 @@
     const preview = document.querySelector('#preview');
     const form = document.querySelector('#form');
     const next = document.querySelector('#next');
+    const submit = document.querySelector('#submit');
     const back = document.querySelector('#back');
     const close = document.querySelector('#close');
     const mobile_nav = document.querySelector('.mobile-nav');
+    const main = document.querySelector('#main');
+    const spinner = document.querySelector('#spinner');
 
     menu.addEventListener('click', () => {
         mobile_nav.classList.toggle('show');
@@ -207,6 +214,14 @@
         preview.classList.toggle('hidden');
     })
 
+    submit.addEventListener('click', () => {
+        main.classList.toggle('hidden');
+        spinner.classList.toggle('hidden');
+        setTimeout(() => {
+            window.location.href='./success.html'
+        }, 1500);
+    })
+
     back.addEventListener('click', () => {
         form.classList.toggle('hidden');
         preview.classList.toggle('hidden');
@@ -215,6 +230,9 @@
     close.addEventListener('click', () => {
         mobile_nav.classList.toggle('show');
     })
+
+    
+
 </script>
 
 </html>
