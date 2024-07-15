@@ -26,18 +26,6 @@
         <header class="py-3 pt-7 relative" >
             <div class="flex justify-between items-center ">
                 <a href="/"><img class="w-40 block lg:hidden " src="../public/images/logo.svg" alt="logo"></a>
-              <!--   <div class="hidden lg:block">
-                    <ul class="flex items-center gap-5 font-medium" >
-                        <li class="cursor-pointer text-[#ff0000] " > <a href="#">  Home</a></li>
-                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="/feature.html">Features</a>  </li>
-                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="how-it-works.html">How It Works</a>  </li>
-                        <li class="cursor-pointer hover:text-[#ff0000]" > <a href="about-us.html">About Us</a>  </li>
-                    </ul>
-                </div> -->
-                <!-- <div class="hidden lg:flex gap-3 text-[13px]">
-                    <button class="border border-[#ff0000] text-[#ff0000] rounded-full px-6 py-2 "> <a href="../login.html">Login</a> </button>
-                    <button class="text-white bg-[#ff0000] rounded-2xl px-6 py-2"> <a href="../register.html">Create Account</a></button>
-                </div> -->
                 <button id="menu" class="block lg:hidden" > <img class="w-6" src="../public/images/menu.svg" alt="menu icon">  </button>
             </div>
             <div class="mobile-nav hidden shadow z-[100] fixed w-full min-h-[300px] bg-white top-0 right-0 p-10 pt-20">
@@ -81,49 +69,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="px-5 sm:px-20 py-10">
-                    <p class="font-bold text-2xl text-[red] mb-1" >Report Incidents</p>
-                    <p class="mb-7" >How do you intend to report this incident?</p>
+                <div class="px-5 sm:px-20 py-10 w-full grid place-content-center">
+                    
 
-                    <div id="form" class="max-w-[350px] mt-3">
-                        <div class="flex items-center gap-1 mb-2" ><span class="font-semibold" >Location</span>  <span>Onne, Port Harcourt</span> <img src="../public/images/location.svg" alt="location"> </div>
-                        <div class="bg-[#f4f4f4] py-10 grid place-content-center">
-                            <div style="border-style: dashed;" class="text-center w-40 min-h-20 border-2 border-dashed">
-                                <img class="mx-auto" src="../public/images/Camera.svg" alt="camera">
-                                <p>Click to capture <br> photos of the incident</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-1 mt-7 mb-2" ><span class="font-semibold" >Describe the situation</span>  </div>
-                        <input class="bg-[#f4f4f4] py-3 px-3 outline-none w-full " />
-                        <div class="flex items-center gap-1 mt-7 mb-2" ><span class="font-semibold" >Select Relevant Tags</span>  </div>
-                        <input class="bg-[#f4f4f4] py-3 px-3 outline-none w-full " />
-                        <button id="next" class="mt-10 mx-auto sm:mx-[unset] w-fit text-white bg-[red] px-10 py-2.5" >Next</button>
+                    <div id="form" class="max-w-[550px]  text-center text-sm">
+                         <img class="max-w-[200px] mx-auto" src="../public/images/success.svg" alt="success">
+                         <p>Incidence successfully sent for a review. We will let you keep you updated <br> on the status of this incident. Thank you very much.</p>
                     </div>
 
-                    <div id="preview" class="hidden max-w-[1000px] mt-3">
-                        <div class="grid sm:grid-cols-3 grid-cols-1 gap-5">
-                            <img src="../public/images/preview.svg" alt="preview">
-                            <img src="../public/images/preview.svg" alt="preview">
-                            <img src="../public/images/preview.svg" alt="preview">
-                        </div>
-                        <div class="mt-10">
-                            <div class="flex items-center gap-1" ><span class="font-semibold" >Location</span>  <span>Onne, Port Harcourt</span> <img src="../public/images/location.svg" alt="location"> </div>
-                            <div class="flex flex-col gap-1 my-5" ><span class="font-semibold" >Description</span>  
-                                <p>
-                                    I spotted 5 people not wearing their boots and <br> gloves. Also saw nails on the floor.
-                                </p> 
-                            </div>
-                            <div class="flex flex-col gap-1 my-5" ><span class="font-semibold" >Tags</span>  
-                                <p>No Boot</p>
-                                <p>No Gloves</p>
-                                <p>Nails on the floor</p>
-                            </div>
-                            <div class="flex items-center gap-3 mt-10 mb-5">
-                                <button id="back" class="w-fit text-white bg-black px-10 py-2.5" >Back</button>
-                                <a href="./success.html" id="next" class=" mx-auto sm:mx-[unset] w-fit text-white bg-[red] px-10 py-2.5" >Submit For Review</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
