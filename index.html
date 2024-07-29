@@ -54,11 +54,11 @@
             </div>
         </header>
         <main>
-             <div class="flex items-center gap-10 justify-between mt-20 max-w-[950px] mx-auto">
+             <div class="flex flex-col-reverse md:flex-row items-center gap-10 justify-between mt-20 max-w-[950px] mx-auto">
                 <div class="">
-                    <p class="text-4xl font-semibold mb-4">Find Reliable Event  <br>Service Providers Fast</p>
-                    <p class="text-xl text-[#404A63]">Quick Planners connects you with reliable <br>
-                        event service providers using an escrow <br> system.</p>
+                    <p class="text-4xl font-semibold mb-4">Find Reliable Event  <br class="hidden sm:block">Service Providers Fast</p>
+                    <p class="text-xl text-[#404A63]">Quick Planners connects you with reliable <br class="hidden sm:block">
+                        event service providers using an escrow <br class="hidden sm:block"> system.</p>
                     <div class="flex gap-3 mt-7">
                         <select class="text-sm border outline-none pl-2 w-40" >
                             <option value="">Hirer Vendors</option>
@@ -72,10 +72,10 @@
                 </div>
                 <div class="flex gap-5 h-[400px]">
                     <img class="h-[300px]" src="./public/images/img2.png" alt="">
-                    <img class="h-[300px] mt-auto" src="./public/images/img1.png" alt="">
+                    <img class="hidden sm:block h-[300px] mt-auto" src="./public/images/img1.png" alt="">
                 </div>
              </div>
-             <div class="mt-20 font-semibold text-white text-lg text-center bg-[#404A63] p-10 grid grid-cols-3 gap-5">
+             <div class="mt-20 font-semibold text-white text-lg text-center bg-[#404A63] p-10 grid sm:grid-cols-3 gap-10 sm:gap-5">
                 <div class="">
                     <p>5 minutes</p>
                     <p>Average response time</p>
@@ -89,55 +89,55 @@
                     <p>States covered</p>
                 </div>
              </div>
-             <div class="max-w-[1200px] mx-auto ml-14">
+             <div class="max-w-[1200px] mx-auto ml-0 md:ml-14 ">
                  <div class="text-center mt-20">
                     <p class="mb-2 text-3xl font-semibold" >How It Works</p>
                     <p>We offer an optional escrow service for your peace of mind. Book confidently, <br> with refunds if vendors don't meet agreed standards.</p>
                  </div>
-                 <div class="relative mt-20 flex flex-wrap place-content-center">
-                    <div class="w-[33%] grid">
+                 <div class="relative mt-20 grid md:flex flex-wrap place-content-center">
+                    <div class="text-center md:text-left md:w-[33%] grid">
                         <img class="max-w-[200px] h-[200px]" src="./public/images/8.png" alt="">
                         <div class="">
                             <p class="font-semibold">01</p>
                             <p class="font-medium text-sm">Tell us the <br> vendor you need.</p>
                         </div>
                     </div>
-                    <div class="w-[33%] flex">
+                    <div class="text-center md:text-left md:w-[33%] grid md:flex">
                         <div class="mt-10">
                             <p class="font-semibold">03</p>
                             <p class="font-medium text-sm">Submit your <br> request.</p>
                         </div>
                         <img class="max-w-[200px] h-[200px]" src="./public/images/10.png" alt="">
                     </div>
-                    <div class="w-[33%] flex">
+                    <div class="text-center md:text-left md:w-[33%] grid md:flex">
                         <div class="mt-10">
                             <p class="font-semibold">05</p>
                             <p class="font-medium text-sm">Select a vendor.</p>
                         </div>
                         <img class="max-w-[200px] h-[200px]" src="./public/images/12.png" alt="">
                     </div>
-                    <div class="mt-20 w-[33.3%] flex">
+                    <div class="mt-20 text-center md:text-left md:w-[33.3%] grid md:flex">
                         <div class="mt-10">
                             <p class="font-semibold">02</p>
                             <p class="font-medium text-sm">Tell us about <br> your event.</p>
                         </div>
                         <img class="max-w-[200px] h-[200px]" src="./public/images/9.png" alt="">
                     </div>
-                    <div class="mt-20 w-[33.3%] flex">
+                    <div class="mt-20 text-center md:text-left md:w-[33.3%] grid md:flex">
                         <div class="mt-10">
                             <p class="font-semibold">04</p>
                             <p class="font-medium text-sm">Get offer requests <br> from vendors.</p>
                         </div>
                         <img class="max-w-[200px] h-[200px]" src="./public/images/11.png" alt="">
                     </div>
-                    <img class="absolute left-[190px] top-[200px]" src="./public/images/Arrow 1.png" alt="">
-                    <img class="absolute left-[450px] top-[200px]" src="./public/images/Arrow 2.png" alt="">
-                    <img class="absolute left-[650px] top-[200px]" src="./public/images/Arrow 3.png" alt="">
-                    <img class="absolute right-[220px] top-[220px]" src="./public/images/Arrow 4.png" alt="">
+                    <img class="hidden xl:block absolute left-[190px] top-[200px]" src="./public/images/Arrow 1.png" alt="">
+                    <img class="hidden xl:block absolute left-[450px] top-[200px]" src="./public/images/Arrow 2.png" alt="">
+                    <img class="hidden xl:block absolute left-[650px] top-[200px]" src="./public/images/Arrow 3.png" alt="">
+                    <img class="hidden xl:block absolute right-[220px] top-[220px]" src="./public/images/Arrow 4.png" alt="">
                  </div>
              </div>
              <div style="background: url('./public/images/bg-pattern.svg');" class="p-10 mt-32  w-full min-h-[200px]">
-                <div class="max-w-[900px] mx-auto flex justify-between items-center gap-10">
+                <div class="max-w-[900px] mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
                     <div class="text-white">
                         <p class="text-3xl mb-4">Download our Latest <br> Mobile App</p>
                         <p class="mb-4" >Download our mobile app and have easy access to <br> vendors and anew features at all time</p>
@@ -162,12 +162,12 @@
                     <img src="./public/images/Phone.png" alt="phone">
                 </div>
              </div>
-             <div class="mt-14 max-w-[700px] mx-auto flex items-center gap-10">
+             <div class="mt-14 max-w-[700px] mx-auto grid md:flex items-center gap-10">
                 <div class="text-2xl font-semibold">
                     <p>Sign Up To Receive <br> Updates From Us</p>
                 </div>
-                <div class="flex gap-3 items-center text-sm">
-                    <input type="text" placeholder="Enter your email" class="outline-none border px-3 w-60 rounded py-3">
+                <div class="grid md:flex gap-3 items-center text-sm">
+                    <input type="text" placeholder="Enter your email" class="w-full outline-none border px-3 sm:w-60 rounded py-3">
                     <button class="text-white bg-black rounded px-6 py-3"> <a href="">Subscribe</a></button>
 
                 </div>
